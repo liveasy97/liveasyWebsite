@@ -1,0 +1,740 @@
+html {
+  scroll-behavior: smooth;
+  --green: #09B778;
+  --blue: #152968;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Poppins;
+}
+.navbar{
+    padding-left: 4.3rem;
+    padding-right: 4rem;
+    z-index: 1;
+}
+.navbar .navbar-nav a{
+    display: inline-block;
+    color: white !important;
+    text-decoration: none;
+    font-family: Poppins;
+    padding-right:2rem;
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 1.5rem;
+}
+.navbar .navbar-nav a:hover{
+    color: #09B778 !important;
+}
+#online-truck-booking{
+    height: 100vh;
+    background-image:url("images/background.jpg") !important;
+    background-size: cover;
+    background-position: center;
+}
+#online-truck-booking a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--green);
+    border: 1.4px solid var(--green);
+    border-radius: 4px;
+    padding: 0.6rem 0;
+    font-weight: 400;
+    width: 16rem;
+    text-align:center;
+}
+#online-truck-booking a:not(:first-child){
+    margin-left: 1rem;
+}
+#online-truck-booking a:hover{
+    background-color: var(--green);
+    color: white;
+}
+
+#online-truck-booking h1{
+    font-family: poppins;
+    font-weight: 400;
+}
+@media (min-width: 760px) and (max-width: 1024px){
+
+    .bg{
+        height: 84rem;
+    }
+   
+    #contact input,#contact textarea, #contact input[type=submit]{
+        width: 60%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 740px){
+
+    .navbar{
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
+    }
+    #online-truck-booking{
+        height: 80vh;
+        padding: 0 2rem;
+    }
+    #online-truck-booking .btn_style{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #online-truck-booking .btn_style a:last-child{
+        margin-top: 0.6rem;
+        margin-left: 0;
+    }
+}
+.rect1{
+    width: 80vw;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height:35%;
+    background-color: #000066 ;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 20px;
+    box-shadow: 11px 14px 15px rgba(0, 0, 0, 0.25);
+  
+  }
+  .rect1 .text1{
+    font-size: 2.5vw;
+    font-family: Poppins;
+    color: rgb(255, 255, 255);
+    margin-left: 8vw;
+    margin-top: 6%;
+    font-weight: bold;
+  }
+  .rect2{
+    width: 26vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 16%;
+    margin-top: -14%;
+    position: absolute;
+    background-color: #000066;
+    border-color: rgb(255, 255, 255);
+    margin-left: 37%;
+    border-radius: 20px;
+    border-style: solid;
+    box-shadow: 11px 14px 15px rgba(0, 0, 0, 0.25);
+  }
+  .rect1 .text2{
+    font-size: 2.5vw;
+    font-family: Poppins;
+    color:#fff;
+    margin-top: 7%;
+    margin-right: 7vw;
+    font-weight: bold;
+    text-align: center;
+  }
+  .rect1 .text2 a,.rect1 .text1 a{
+    color: #fff;
+  }
+  .rect2 .text3 a{
+    color: #09B778;
+  }
+  .rect2 .text3{
+    position: absolute;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 3vw;
+    margin-top: -50%;
+    margin-left: 30%;
+  }
+  
+  section .booking{
+    width: 100%;
+    min-height: 100vh;
+  }
+  .booking div.semicircle { 
+    margin-top: 17%;
+    position: absolute;  
+    left: 70%;
+    height: 300px; 
+    width: 600px; 
+    border-radius: 300px 300px 0 0px; 
+    background: linear-gradient(180deg, rgba(3, 32, 134, 0.73) 0%, rgba(3, 32, 134, 0) 93.75%);transform: matrix(0, 1, 1, 0, 1, 0);
+    z-index: -1;
+  }
+  .booking .title{
+    width: 100%;
+    height:5%;
+  }
+  .title h2.heading{
+    text-align: center;
+    margin-top: 14%;
+    font-weight: bolder;
+    font-size: 3vw;
+  
+  }
+  .title h2.sub{
+    text-align: center;
+    color: #157D04;
+    font-weight: bold;
+    font-size: 2vw;
+    margin-top: 2%;
+    text-decoration: underline;
+  }
+  
+  div.sec{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+  
+  }
+  .sec .left{
+    width: 50%;
+    margin-left: 13%;
+    margin-top: 9%;
+  }
+  
+  .booking .sec .left .vl1 {
+    border-left: 0.3vw dashed black;
+    height: 14vh;
+    margin-left: 14px;
+  }
+  .left h2 {
+    margin-left: 8%;
+    margin-top:6.5%;
+    font-weight: bold;
+  }
+  .left img{
+    margin-left: 0.2vw;
+  }
+  .left div.text{
+    margin-top: -74%;
+  }
+  .left div.text h2.bold{
+    margin-top: 4vh;
+  
+  }
+  div.text h2.final{
+    margin-top: 4vh;
+  }
+  .left h1{
+    color: #000;
+    margin-left: 7%;
+    margin-top: 3%;
+    font-weight: lighter;
+    font-size: 2vw;
+    font-style: bold;
+  }
+  .left div.dotted{
+    border-left:10% dotted black;
+  }
+  
+  .sec section.right{
+    width: 50%;
+    text-align: center;
+  }
+  .booking .right img{
+    width: 350px;
+    height: 650px;
+  }
+  section.first{
+    margin-top:10%
+  }
+  section.second{
+    margin-top:-97%;
+  }
+  .right .first img.screen{
+    width:32vh;
+    height:62vh;
+  }
+  .booking .right div{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:#000000;
+  }
+  .booking .content{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+  }
+  .booking .content div{
+    margin-left:15%;
+    margin-top: 7%;
+    text-align: center;
+  
+  }
+  .content div h2{
+    font-family: 'poppins';
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+  .content div h1{
+  font-weight: 100;
+  font-size: 2vw;
+  color:rgba(126, 110, 110, 0.72);
+  }
+  .sec .left h1{
+    color:#000;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-size: 1.4vw;
+  }
+  .home .left b1{
+    background-color: aliceblue;
+  }
+  .hl{
+    border: 2px solid #000000;
+    height: 0px;
+    width: 60%;
+    margin-top: 8rem;
+    margin-left: 20%;
+  }
+  @media (min-width: 320px) and (max-width: 740px){
+    .booking{
+      height: 50rem;
+      width: 100%;
+    }
+    .right,.semicircle{
+      display: flex;
+      flex-direction: column;
+    }
+    .left .text{
+      margin-left: 20%;
+    }
+    .left .text h2{
+      margin-top: -55vh;
+    }
+    .left .text h1{
+      font-size: 2vw;
+    }
+    .sec .left img{
+      width: 8%;
+      height: 8%;
+    }
+}
+
+
+.gps-image{
+    background-color: #fff;
+}
+.blue-box{
+    position: absolute;
+    width: 100%;
+    top: 165rem;
+    height: 11rem;
+    left: 0px;
+    background: #001251;
+}
+.blue-box img{
+    display: block;
+    margin-top: -4.5%;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;    
+}
+.blue-box h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 96px;
+    color: #000000;
+}
+.blue-box p{
+    position: absolute;
+    width: 40rem;
+    height: 5rem;
+    left: 27rem;
+    top: 20rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 48px;
+    text-align: center;
+    color: rgba(126, 110, 110, 0.67);
+}
+
+.slider {
+    width: 500px;
+    height: 300px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 1500px;
+    background-color: pink;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2:target ~ .image-container {
+    left: -500px;
+  }
+  #slide-3:target ~ .image-container {
+    left: -1000px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: #0695A9;
+  }
+  .payment h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 96px;
+    color: #000000;
+  }
+  .payment p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 60px;
+    color: rgba(126, 110, 110, 0.81);
+  }
+  .payment h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 72px;
+    color: #034852;
+  }
+  .payment .info{
+    margin-top: 10rem;
+    top: -10%;
+    width: 23rem;
+    margin-left: 10rem; 
+}
+  .payment img{
+    margin-right: 5rem;
+    margin-top: -25rem;
+    position:relative;
+    display: block;
+    margin-left: auto;
+  }
+  .payment .rimg p{
+    box-sizing: border-box;
+    position: absolute;
+    width: 308px;
+    height: 98px;
+    left: 760px;
+    top: 233rem;
+    text-align: center;
+    background: rgba(36, 255, 0, 0.31);
+    border: 3px solid #24FF00;
+    border-radius: 35px;
+    }
+    .products{
+      height: 60rem;
+    }
+    .title h2.heading{
+      text-align: center;
+      font-weight: bolder;
+      font-size: 3.5vw;
+    }
+    .products .slide{
+      margin-top: 3%;
+      width:100%;
+     }
+     .slide .slide1{
+      width:50%;
+      height: 7.5vh;
+      background-color: rgba(126, 110, 110, 0.3);
+      border-radius: 30px;
+      margin-left:25%;
+     }
+     .slide .slide2{
+      width: 50%;
+      height: 7.5vh;
+      background-color: #034852;
+      border-radius: 30px;
+      margin-left:0%;
+      margin-top: -4%;
+      
+     }
+     .slide1 .word1{
+      font-size: 2em;
+      font-weight: bold;
+      margin-left: 70%;
+     }
+     .slide1 .word2{
+      font-size: 2em;
+      font-weight: bold;
+     }
+     .slide1 .word1 a{
+      position: absolute;
+      margin-top: 0.5%;
+      color: #000;
+      text-decoration: none;
+     }
+     .slide1 .word2 a{
+      position: absolute;
+      margin-top: 0.5%;
+      margin-left: 7%;
+      color: #fff;
+      text-decoration: none;
+     }
+     section.part{
+      width: 100%;
+      display:flex;
+      justify-content: space-around;
+  
+  }
+  section.part2{
+    justify-content: space-around;
+  }
+     section .left-sec{
+      width: 30%;
+      margin-left: 9%;
+      margin-top: 9%;
+  }
+  section .right-sec{
+      width:50%;
+  
+  }
+  .part div.semi,.part2 div.semi{
+      margin-top: 21%;
+      position: absolute;
+      margin-left: -85%;  
+      height: 300px; 
+      width: 600px; 
+      border-radius: 0px 0px 300px 300px; 
+      background: linear-gradient(180deg, rgba(3, 32, 134, 0.73) 0%, rgba(3, 32, 134, 0) 93.75%);transform: matrix(0, 1, 1, 0, 1, 0);
+      z-index: -1;
+  }
+  section .left-sec img{
+      width: 350px;
+      height: 650px;
+  }
+  .left-sec .loc{
+      width: 330px;
+      height: 640px;
+      margin-top: -82%;
+      margin-left:1%
+  }
+  .right-sec .blue{
+      text-transform: inherit;
+      color: #03;
+      font-size: 30px;
+      font-family: 'Poppins';
+      font-weight: bold;
+      margin-top: 22%;
+      margin-left: 15%;
+  }
+  .right-sec .blue p{
+    font-size: 38px;
+  }
+  .right-sec .black{
+      margin-top: 6%;
+      margin-left: 15%;
+      font-size: 24px;
+      font-family: 'poppins';
+  }
+  div.play{
+      width:45%;
+      height: 8%;
+      background-color: #001251;
+      border-radius: 20px;
+      margin-top:10%;
+      margin-left:28%;
+      display:flex;
+      text-decoration: none;
+      text-align: center;
+  }
+  .play img{
+      margin-left:4%;
+  }
+  .play h2.text{
+      color: #fff;
+      margin-left: 4%;
+      margin-top: 5.5%;
+      font-size: 1.5rem;
+      text-decoration: underline;
+  }
+  .play a{
+    color: #fff;
+  }
+  .play a:hover{
+    color: #09B778;
+  }
+  .booking .hl{
+      border-left: 3px dashed #000000;
+      height: 0px;
+      width: 70%;
+      margin-top: 8rem;
+      margin-left: 15%;
+    }
+  .hl2{
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .line{
+    border-top: 4px solid var(--green);
+    width: 8rem;
+}
+#contact input,#contact textarea, #contact input[type=submit]{
+        width: 100%;
+    }
+
+    #contact .faqs button{
+        text-decoration: none;
+        background: none;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
+        width: 100%;
+        text-align: left;
+        margin-top:1rem;
+        padding:0 0 0.4rem 0.4rem;
+    }
+.bg{
+  background-color: #000;
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-size: 35px;
+  color: rgb(255, 253, 253);
+  font-family: 'Poppins';
+  font-style: Medium;
+  margin-left: 2%;
+  color: #032086;
+  margin-top: 1%;
+}
+.nav-links ul{
+  display:flex;
+}
+.nav-links ul li{
+  list-style:none;
+}
+.nav-links li a{
+  font-size: larger;
+  color: black;
+  text-align: center;
+}
+.nav-links li span{
+  padding:15px 33px;
+  border-radius: 29px;
+}
+.nav-links li span:hover{
+  background-color: #032086;
+}
+.nav-links li a:hover{
+  color: aliceblue;
+}
+div.heading{
+  width: 100%;
+}
+.heading h2{
+  text-align: center;
+  font-size:40px;
+  margin-top: 4%;
+}
+.text{
+  text-align: center;
+}
+.text p{
+  font-size: 27px;
+  color: #7E6E6E;
+  margin: 2%;
+  text-transform: none;
+}
+.flex{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-left: 25%;
+}
+
+.flex .slick-dots li.slick-active button:before{
+  color: #0695A9;
+}
+.slick-dots li button:before{
+  font-size: 12px;
+}
+@media only screen and (max-width: 600px) {
+  .flex img, .flex h2{
+      width: 60px;
+      font-size: 10px;
+      justify-content: space-between;
+  }
+}
+  @media(max-width:600px){/*
+    .products{
+      height: 70rem;
+    }
+    .slide1{
+      width: 25%;
+    }
+    .slide1 .word1,.slide1 .word2{
+      font-size: 16px;
+    }
+    .slide2{
+      width: 25%;
+    }
+    .slide1 .word1 a{
+      margin-left: 0%;
+      margin-top: 4%;
+    }
+    .slide1 .word2 a{
+      margin-left: 4%;
+      margin-top: 4%;
+    }
+    .right-sec{
+      position: absolute;
+      margin-left: -30%;
+      justify-content: space-around;
+    }
+    .right-sec .blue,.right-sec .black{
+      width: 165%;
+    }
+    .right-sec .blue p{
+      position: relative;
+      font-size: 32px;
+    }
+    .right-sec .black p br,.right-sec .blue p br{
+      display: none;
+    }
+    .right-sec .play{
+      width: 120%;
+    }
+  }
+
+
+
+
+
