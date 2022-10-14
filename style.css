@@ -14,6 +14,13 @@ h1, h2, h3, h4, h5, h6{
     padding-right: 4rem;
     z-index: 1;
 }
+header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: 100ms ease-in-out;
+}
 .navbar .navbar-nav a{
     display: inline-block;
     color: white !important;
@@ -88,11 +95,12 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 .rect1{
+  position: absolute;
   width: 80vw;
   display: flex;
   flex-direction:row;
   justify-content: space-between;
-  height:35%;
+  height:12.5vw;
   background-color: #000066 ;
   margin-left: 10%;
   margin-top: 5%;
@@ -101,7 +109,7 @@ h1, h2, h3, h4, h5, h6{
 
 }
 .rect1 .text1{
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-family: Poppins;
   color: rgb(255, 255, 255);
   margin-left: 8vw;
@@ -110,11 +118,8 @@ h1, h2, h3, h4, h5, h6{
 }
 .rect2{
   width: 26vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding-top: 16%;
-  margin-top: -14%;
+  margin-top: 4%;
   position: absolute;
   background-color: #000066;
   border-color: rgb(255, 255, 255);
@@ -124,10 +129,10 @@ h1, h2, h3, h4, h5, h6{
   box-shadow: 11px 14px 15px rgba(0, 0, 0, 0.25);
 }
 .rect1 .text2{
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-family: Poppins;
   color:#fff;
-  margin-top: 7%;
+  margin-top: 5%;
   margin-right: 7vw;
   font-weight: bold;
   text-align: center;
@@ -142,13 +147,13 @@ h1, h2, h3, h4, h5, h6{
   position: absolute;
   font-family: Poppins;
   font-weight: bold;
-  font-size: 3vw;
-  margin-top: -50%;
-  margin-left: 30%;
+  font-size: 2.2vw;
+  margin-top: 23%;
+  margin-left: 23%;
 }
 
 .booking{
-  margin-top: 10%;
+  margin-top: 28%;
   width: 100%;
 }
 .booking_done{
@@ -159,13 +164,13 @@ h2.heading{
   width: 100%;
   text-align: center;
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 h2.sub{
   text-align: center;
   color: #157D04;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 2%;
   text-decoration: underline;
 }
@@ -193,7 +198,10 @@ h2.sub{
 .left-track .img{
   width: 60px;
   height: 100%;
-
+}
+.track .left-track .text{
+  margin-left: 0%;
+  width: 100%;
 }
 #track{
   width: 40px;
@@ -206,17 +214,18 @@ h2.sub{
 }
 .text .blockk{
   height:155px;
-
 }
 .text h1{
+  font-family: Poppins;
+  text-align: left;
   font-size: 25px;
+  font-weight: 700;
 }
 .text .fadee{
+  text-align: left;
   font-size: 20px;
-  font-weight: 500;
   color: #64616194;
   text-decoration: none;
-  text-transform: none;
 }
 .phone_post{
   height: 100%;
@@ -239,11 +248,13 @@ h2.sub{
   gap: 1vw;
 }
 .content div{
-  margin-left:10%;
+  width: 16%;
+  margin-left:12%;
   margin-top: 10%;
   text-align: center;
 }
-.content h4{
+
+.content h5{
   color: #7E6E6E;
 }
 .hl{
@@ -258,8 +269,8 @@ h2.sub{
       display: none;
   }
   .left-track{
-      width: 380px;
-      height: 500px;
+      width: 300px;
+      height: 450px;
   }
   .right-track{
       width: 380px;
@@ -280,6 +291,9 @@ h2.sub{
   .content div h4{
       font-size: 2vw;
   }
+  .content div h5{
+      font-size: 1.5vw;
+  }
   .content div br{
       display: none;
   }
@@ -287,7 +301,8 @@ h2.sub{
       font-size: 1em;
   }
   .content div{
-      margin-top: 15vw;
+      margin-top: 20vw;
+      margin-left: 15%;
   }
 }
 @media (min-width:740px) and (max-width:1180px) {
@@ -349,25 +364,25 @@ h2.sub{
   text-align: center;
 }
 .third-page .iayf{
-  margin-left: 13vw;
+  margin-left: 20vw;
   margin-top: 10%;
 }
 .third-page .iayf p{
-  width: 70vw;
+  width: 60vw;
   color: #7E6E6E;
   text-align: center;
-  font-size: 2.2vw;
+  font-size: 1.4vw;
 }
 .third-page .iayf h2{
-  font-size: 3vw;
-  width: 70vw;
+  font-size: 2.5vw;
+  width: 60vw;
   text-align: center;
 }
 .slider-transport{
   margin-top: 6%;
 }
 .transport{
-  width: 65%;
+  width: 55%;
   margin: auto;
 }
 .transport img{
@@ -387,77 +402,59 @@ h2.sub{
 .third-page .payment .part1{
   margin-left: 8%;
   margin-top: 5%;
-  width: 40vw;
+  width: 25vw;
 }
 .third-page .payment .part2{
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 .third-page .payment .part2 img{
   width: 45vw;
 }
-.third-page .payment .part1 h1{
+.third-page .payment .part1 h2{
   color: #000;
-  font-size:3.5vw;
+  font-size:3vw;
 }
-.third-page .payment .part1 h3{
-  font-size: 2vw;
+.third-page .payment .part1 h5{
+  font-size: 1.5vw;
   color:#7E6E6E
 }
-.third-page .payment .part1 h2{
-  font-size: 3.5vw;
+.third-page .payment .part1 h3{
+  font-size: 2.5vw;
   color: #034852;
 }
 
 
 #products{
-  height: 50rem;
+  margin-top: 10%;
+  height: auto;
  }
  #products .slide{
-  margin-top: 3%;
+  padding-top: 3%;
   width:100%;
  }
  .slide .slide1{
-  width:50%;
-  height: 7.5vh;
-  background-color: rgba(126, 110, 110, 0.3);
-  border-radius: 30px;
-  margin-left:25%;
-  margin-top: 8%;
- }
- .slide .slide2{
-  width: 50%;
+  width:25%;
   height: 7.5vh;
   background-color: #034852;
-  border-radius: 30px;
-  margin-left:0%;
+  color:#fff;
+  border-radius: 10px 0px 0px 10px;
+  border-color: #fff;
+  margin-left:25%;
+ }
+ .slide .slide2{
+  width: 25%;
+  height: 7.5vh;
+  background-color: rgba(175, 162, 162, 0.3);
+  border-color: #fff;
+  color: #000;
+  border-radius: 0px 10px 10px 0px;
+  margin-left:-0.55%;
   margin-top: -14%;
  }
- .slide1 .word1{
-  font-size: 100%;
-  font-weight: bold;
-  margin-left: 27vw;
- }
- .slide1 .word2{
-  margin-left: -1vw;
-  font-size: 100%;
-  font-weight: bold;
- }
- .slide1 .word1 a{
-  position: absolute;
-  margin-top: -5vh;
-  color: #000;
-  text-decoration: none;
- }
- .slide1 .word2 a{
-  position: absolute;
-  margin-top: -6vh;
-  margin-left: 7vw;
-  color: #fff;
-  text-decoration: none;
- }
-
+ 
 #products .p-desc{
+  padding-top: 5%;
   display: flex;
   justify-content: space-around;
 }
@@ -468,7 +465,7 @@ h2.sub{
 }
 
 #products .p-desc h2, #products .p-desc p{
-  width: 24rem;
+  width: 30rem;
 }
 
 #products .btn{
@@ -486,6 +483,9 @@ h2.sub{
   border: 1.4px solid #09B778;
   color: #fff;
 }
+#products .cont{
+  padding-top: 7%;
+}
 .semi{
   margin-top: 11vh;
   position: absolute;
@@ -497,17 +497,23 @@ h2.sub{
   z-index: -1;
 }
 div.heading{
-  width: 100%;
+  width: 40%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .heading h1{
   text-align: center;
   margin-top: 4%;
 }
 .text{
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
   text-align: center;
 }
 .text p{
-  font-size: 27px;
+  font-size: 1.2vw;
   color: #7E6E6E;
   margin: 2%;
   text-transform: none;
@@ -515,13 +521,19 @@ div.heading{
 .flex{
   margin-top: 5%;
   display: flex;
-  justify-content: space-around;
-  width: 60%;
-  margin-left: 25%;
+  width: 50%;
+  margin-left: 30%;
 }
-
+.flex .manu img{
+  width: 5vw;
+  height: 5vw;
+}
 .flex .slick-dots li.slick-active button:before{
   color: #0695A9;
+
+}
+.slick-dots{
+  margin-left: -7%;
 }
 .slick-dots li button:before{
   font-size: 12px;
@@ -539,9 +551,9 @@ div.heading{
   margin-top: 10%;
   position: absolute;
   width: 50vw;
-  height: 10rem;
+  height: auto;
   padding-bottom: 20%;
-    user-select: none;
+  user-select: none;
   background-color: #fff;
   border: 1px solid #02B0C8;
   box-shadow: -2px 5px 39px #032086;
@@ -694,33 +706,35 @@ margin-left: 4%;
   .reviews-section{
     height: 15rem;
   }
-}
-@media only screen and (max-width: 600px) {
-  .flex img, .flex h2{
-      width: 60px;
-      font-size: 10px;
-      justify-content: space-between;
+  .flex .manu h4{
+    font-size: 1.5vw;
   }
-  .industries .text br{
-      display: none;
+  .slick-dots li button:before{
+    font-size: 8px;
   }
 }
+
 .bg{
   background-color: #000;
+}
+.bg p{
+  margin-left: 19%;
+  width: 62%;
+  text-align: center;
 }
 .line{
   border-top: 4px solid var(--green);
   width: 8rem;
 }
 #contact{
-  height: 20rem;
+  height: auto;
 }
 #contact .faqs button{
       text-decoration: none;
       background: none;
       color: white;
       border: none;
-      border-bottom: 1px solid white;
+      border-bottom: 2px solid var(--green);
       width: 100%;
       text-align: left;
       margin-top:1rem;
@@ -749,62 +763,104 @@ margin-left: 4%;
   margin-left: 15vw;
   margin-top: 6vh;
 }
-.contentlast{
-  width:100%;
-  display:flex;
-  flex-direction: row;
-  gap: 1vw;
-}
-.contentlast div{
-  margin-left:10%;
-  margin-top: 10%;
-  text-align: center;
-}
-.contentlast div h3{
-  color: #FFFFFF;
-  font-family: 'poppins';
-  
-}
-.contentlast div a{
-font-weight: 100;
-color:rgba(126, 110, 110, 0.72);
-}
-.soc{
-  height: 10rem;
-  background-color: #000;
-}
-.q2{
-  width: 60%;
-  border: 2px solid;
-  color: rgba(217, 217, 217, 0.31);
-  margin-left: 20%; 
-}
-.soc .logos .log{
-  float: left;
-  padding: 10px;
-}
-.soc .logos{
-  display: flex;
-  margin-left: 45%;
-}
+
+
 @media (min-width: 320px) and (max-width: 740px){
-  .contentlast div{
-    margin-left: 2%;
-    margin-top: 25%;
-  }
-  .contentlast div h3{
-    font-size: smaller;
-  }
-  .contentlast div h5{
-    font-size: 3vw;
-  }
-  .soc .logos{
-    margin-left: 25%;
-  }
   #contact .down-app .btn{
     height: 2rem;
     font-size: 0.7rem;
     padding: 0.4rem 1.2rem;
   }
+}
 
+
+
+
+.foot{
+  margin-top: 5%;
+  background-color: black;
+  height: auto;
+  width: 100%;
+}
+.foot h4{
+  color: #fff;
+}
+.foot .foot1{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.foot .foot1 .left-part .logoo{
+  margin-left: 25%;
+  display: flex;
+  flex-direction: row;
+}
+.foot .foot1 .left-part .logoo img{
+  height: 2.5vw;
+}
+.foot .foot1 .left-part{
+  margin-top: 3%;
+  width: 25%;
+}
+.foot .foot1 .left-part .logoo .loggg{
+  margin-top: -4%;
+  margin-left: 5%;
+}
+.foot .foot1 .left-part .logoo h1
+{
+  margin-top: 20%;
+  font-size: 1.7vw;
+  color: #fff;
+}
+.foot .foot1 .left-part .social{
+  margin-top: 5%;
+  margin-left: 25%;
+}
+.foot .foot1 .left-part .social .logos{
+  width: 15%;
+  margin-left: 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: -3%;
+}
+.foot .foot1 .left-part .social .logos img{
+  width: 1.5vw;
+  height: 1.5vw;
+}
+.foot .foot1 .left-part .social h3{
+  font-size: 1.3vw;
+  color: #fff;
+}
+.foot .right-part{
+  height: auto;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.foot .right-part h4{
+  font-size: 1.2vw;
+}
+.foot .right-part h6{
+  padding: 1vw;
+  font-size: 0.8vw;
+  color:#B7B7B7;
+}
+.foot .linel{
+  border-left: 2px solid green;
+  height: 10vw;
+  margin-top:3vw;
+}
+.foot .linen{
+  margin-top: 3%;
+  border-top: 1px solid #B7B7B7;
+  width: 70vw;
+  margin-left: 15vw;
+}
+.foot h5{
+  margin-top: 3%;
+  font-size: 1vw;
+  text-align: center;
+  color: #B7B7B7;
 }
