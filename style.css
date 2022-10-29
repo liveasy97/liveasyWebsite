@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*POPPINS font*/
 *{
   font-family: 'Poppins';
 }
@@ -10,9 +11,9 @@ html {
 body{
     font-family: 'Poppins', sans-serif;
 }
-h1, h2, h3, h4, h5, h6, p{
-    font-family: Poppins;
-}
+
+/*navbar and home css*/
+
 .navbar{
     padding-left: 4.3rem;
     padding-right: 4rem;
@@ -66,17 +67,6 @@ header{
     font-family: poppins;
     font-weight: 400;
 }
-@media (min-width: 760px) and (max-width: 1024px){
-
-    .bg{
-        height: 84rem;
-    }
-   
-    #contact input,#contact textarea, #contact input[type=submit]{
-        width: 60%;
-    }
-}
-
 @media (min-width: 280px) and (max-width: 740px){
 
     .navbar{
@@ -97,6 +87,19 @@ header{
         margin-left: 0;
     }
 }
+@media (min-width: 760px) and (max-width: 1024px){
+
+  .bg{
+      height: 84rem;
+  }
+ 
+  #contact input,#contact textarea, #contact input[type=submit]{
+      width: 60%;
+  }
+}
+
+/*2nd page css*/
+
 .rect1{
   position: absolute;
   width: 80vw;
@@ -157,7 +160,6 @@ header{
   margin-left: 23%;
   z-index: 1;
 }
-
 .booking{
   margin-top: 28%;
   width: 100%;
@@ -259,7 +261,6 @@ h2.sub{
   margin-top: 10%;
   text-align: center;
 }
-
 .content h5{
   color: #7E6E6E;
 }
@@ -291,7 +292,6 @@ h2.sub{
   .right-track img{
     text-align: center;
   }
-  
   .booking{
       height: auto;
   }
@@ -392,6 +392,8 @@ h2.sub{
   z-index: -1;
   }
 }
+
+/*3rd page style*/
 
 .third-page{
   width: 100%;
@@ -515,6 +517,8 @@ h2.sub{
   }
 }
 
+
+
 #products{
   margin-top: 10%;
   height: auto;
@@ -571,7 +575,10 @@ h2.sub{
   padding: 1rem 3.6rem;
   font-weight: 400;
 }
-
+#products .btn img{
+  width: 40px;
+  height: 40px;
+}
 #products .btn:hover{
   background-color: #09B778;
   border: 1.4px solid #09B778;
@@ -591,7 +598,7 @@ h2.sub{
   z-index: -1;
 }
 div.heading{
-  width: 40%;
+  width: 60%;
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
@@ -664,10 +671,9 @@ div.heading{
   overflow: hidden;
   box-shadow: #03208640;
 }
-
 .wrapper{
   width: 500%;
-  /* 300% 'caz we have 3 cards */
+  /* 500% 'caz we have 5 cards */
   min-height: 100%;
   display: flex;
   justify-content: space-between;
@@ -728,11 +734,12 @@ div.heading{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 4px;
+  font-size: 25px;
 }
 
-.star{
-  width: 25px;
-  margin-right: 5px;
+.checked{
+  color: #EBFF03;
 }
 
 .indicators{
@@ -761,7 +768,8 @@ button.active{
   border-radius: 50px;
   background: #0695A9;
 }
-@media(max-width:700px){
+@media(min-width: 280px) and (max-width:700px){
+
 .namep{
   margin-left: 20%;
   margin-bottom: -6%;
@@ -824,6 +832,19 @@ button.active{
       height: 16rem;
       width: 8rem;
   }
+  #products .btn{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    background-color:#001251;
+    border-radius: 20px;
+    padding: 0.5rem 1.6rem;
+    font-weight: 400;
+  }
+  #products .btn img{
+    width: 40px;
+    height: 40px;
+  }
   .heading h2{
     margin-top: 20%;
     font-size: 1rem;
@@ -845,6 +866,7 @@ button.active{
 
 .bg{
   background-color: #000;
+  height: auto;
 }
 .bg #about p{
   margin-left: 19%;
@@ -868,41 +890,24 @@ button.active{
 #query1{
   margin-left: 4%;
 }
-.down-app{
-  display: flex;
-  flex-direction: row;
-}
-#contact .down-app h1{
-  margin-top: 6vh;
-}
-#contact .down-app .btn{
-  text-decoration: underline;
-  font-size: 1rem;
-  color: white;
-  background-color:rgba(217, 217, 217, 0.2);
-  fill: solid;
-  border-radius: 20px;
-  height: 3.5rem;
-  padding: 1rem 3.6rem;
-  font-weight: 400;
-  margin-left: 15vw;
-  margin-top: 6vh;
-}
+
 #contact .faqs p{
   margin-left: 4%;
   width: 90%;
   font-size: 1vw;
+  color: #fff;
 }
-
-
 @media (min-width: 280px) and (max-width: 740px){
-  #contact .down-app .btn{
-    height: 2rem;
-    font-size: 0.7rem;
-    padding: 0.4rem 1.2rem;
+  #contact{
+    margin-top: 0%;
   }
   .bg p{
-    font-size: 0.3rem;
+    font-size: 0.6rem;
+  }
+  .bg #about p{
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
   }
 }
 
@@ -998,10 +1003,23 @@ button.active{
   text-align: center;
   color: #B7B7B7;
 }
+.appd .plays{
+  margin-top: 40%;
+  text-align: center;
+  width: 15vw;
+  height: 3vw;
+  border-radius: 60px;
+  background: #D9D9D933;
+  font-size: 0.8rem;
+}
+.appd .plays img{
+  width: 40px;
+  height: 40px;
+}
 
 
 @media (min-width: 280px) and (max-width: 740px){
-
+  
   .foot .foot1{
     display: flex;
     flex-direction: column-reverse;
@@ -1070,5 +1088,37 @@ button.active{
   #contact .faqs p{
     font-size: 0.5rem;
     color: #fff;
+  }
+  .appd .plays{
+    margin-top: 40%;
+    text-align: center;
+    width: 30vw;
+    height: 7vw;
+    border-radius: 60px;
+    background: #D9D9D933;
+  }
+  .appd .plays img{
+    width: 20px;
+    height: 20px;
+  }
+  .appd .plays a{
+    font-size: 0.55rem;
+  }
+}
+@media (min-width:750px) and (max-width:1080px) {
+  .appd .plays{
+    margin-top: 40%;
+    text-align: center;
+    width: 20vw;
+    height: 5vw;
+    border-radius: 60px;
+    background: #D9D9D933;
+  }
+  .appd .plays img{
+    width: 40px;
+    height: 40px;
+  }
+  .appd .plays a{
+    font-size: 0.7rem;
   }
 }
