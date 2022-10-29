@@ -10,4 +10,4 @@ indicators.forEach((item, i) => {
         item.classList.add('active');
         currentTestimonial = i;
     })
-})
+}) 
